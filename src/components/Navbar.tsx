@@ -51,7 +51,7 @@ export default function Navbar() {
           </div>
           <div className="hidden sm:block">
             <div className="font-display text-primary font-bold text-xs tracking-widest uppercase leading-none">
-              LF Surveillance
+              Lassa Fever Surveillance
             </div>
             <div className="text-muted-foreground text-[10px] tracking-wide leading-none mt-0.5">Nigeria · National Platform</div>
           </div>

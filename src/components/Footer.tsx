@@ -38,7 +38,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-xl bg-primary flex items-center justify-center glow-ring">
                 <Activity className="w-4.5 h-4.5 text-primary-foreground" />
               </div>
-              <span className="text-foreground font-bold text-base tracking-wide">LF Surveillance Platform</span>
+              <span className="text-foreground font-bold text-base tracking-wide">Lassa Fever Surveillance Platform</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed text-pretty max-w-sm mb-5">
               A comprehensive, data-driven public health platform for real-time Lassa Fever surveillance,
@@ -116,7 +116,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-border pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-foreground/35">
-          <p>© 2026 LF Surveillance Platform. For public health awareness purposes only.</p>
+          <p>© 2026 Lassa Fever Surveillance Platform. For public health awareness purposes only.</p>
           <p>Developed by <span className="text-muted-foreground font-medium">Adam Ibn</span></p>
         </div>
       </div>

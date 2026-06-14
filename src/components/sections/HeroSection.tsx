@@ -111,7 +111,7 @@ export default function HeroSection() {
 
         {/* Main heading — Cinzel / Algerian style */}
         <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance mb-2 gradient-text">
-          LF Surveillance
+          Lassa Fever Surveillance
         </h1>
         <h2 className="font-display text-xl md:text-2xl lg:text-3xl font-semibold text-balance mb-5 text-primary/75 tracking-wide">
           Platform

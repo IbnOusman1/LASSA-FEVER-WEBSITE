@@ -13,7 +13,7 @@ import EmergencySection from '@/components/sections/EmergencySection';
 import Footer from '@/components/Footer';
 
 const SITE_URL = 'https://lf-surveillance.miaoda.app';
-const SITE_TITLE = 'LF Surveillance Platform | Nigeria Lassa Fever';
+const SITE_TITLE = 'Lassa Fever Surveillance Platform | Nigeria Lassa Fever';
 const SITE_DESC =
   'Real-time Lassa Fever surveillance and awareness platform for Nigeria. Track outbreaks, access prevention guidelines, and report symptoms.';
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
@@ -22,7 +22,7 @@ const JSON_LD = JSON.stringify([
   {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'LF Surveillance Platform',
+    name: 'Lassa Fever Surveillance Platform',
     url: SITE_URL,
     description: SITE_DESC,
     potentialAction: {
@@ -34,7 +34,7 @@ const JSON_LD = JSON.stringify([
   {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
-    name: 'LF Surveillance Platform',
+    name: 'Lassa Fever Surveillance Platform',
     url: SITE_URL,
     description: SITE_DESC,
     about: {
@@ -98,7 +98,7 @@ const JSON_LD = JSON.stringify([
     mainContentOfPage: SITE_URL,
     publisher: {
       '@type': 'Organization',
-      name: 'LF Surveillance Platform',
+      name: 'Lassa Fever Surveillance Platform',
       url: SITE_URL,
     },
   },
@@ -114,7 +114,7 @@ function App() {
         {/* Open Graph */}
         <meta property="og:typ        npm install react react-dom
         npm install -D @types/react @types/react-dome"        content="website" />
-        <meta property="og:site_name"   content="LF Surveillance Platform" />
+        <meta property="og:site_name"   content="Lassa Fever Surveillance Platform" />
         <meta property="og:title"       content={SITE_TITLE} />
         <meta property="og:description" content={SITE_DESC} />
         <meta property="og:url"         content={SITE_URL} />

@@ -406,7 +406,7 @@ Lassa Fever Surveillance Platform
 
 ## 6. Acceptance Criteria
 
-1. User opens the website and sees Hero Section with H1 title \"LF Surveillance Platform\", H2 subtitle, dark red/burgundy gradient background with layered medical SVG decorations (virus illustrations, ECG line, molecular dots), and two action buttons with white accents
+1. User opens the website and sees Hero Section with H1 title \"Lassa Fever Surveillance Platform\", H2 subtitle, dark red/burgundy gradient background with layered medical SVG decorations (virus illustrations, ECG line, molecular dots), and two action buttons with white accents
 2. User clicks \"Explore Dashboard\" button and smoothly scrolls to Live Surveillance Dashboard Section displaying real-time statistics cards with visible \"Last Updated\" timestamp, animated pulse indicators, and dark red/burgundy gradient background with ECG line patterns and subtle virus SVG illustrations
 3. User views live ticker/feed showing newly reported cases updating automatically without page reload
 4. User views Interactive Nigeria Map with color-coded risk heatmap on dark red/burgundy gradient background with molecular dot patterns, hovers over Ondo state to see tooltip with region name, cases, deaths, risk level, and 24-hour trend

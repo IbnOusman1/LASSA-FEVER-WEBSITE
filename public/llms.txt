@@ -1,11 +1,11 @@
-# LF Surveillance Platform
+# Lassa Fever Surveillance Platform
 
 > Real-time Lassa Fever surveillance and awareness platform for Nigeria (2020–2026).
 > Developed by Adam Ibn.
 
 ## What this site is
 
-LF Surveillance Platform is a public health intelligence website tracking Lassa fever outbreaks
+Lassa Fever Surveillance Platform is a public health intelligence website tracking Lassa fever outbreaks
 across Nigeria. It provides epidemiological data, interactive visualizations, outbreak predictions,
 prevention guidelines, and a live symptom reporting system.
 
