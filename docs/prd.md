@@ -2,7 +2,7 @@
 
 ## 1. Application Overview
 
-**Application Name**: LF Surveillance Platform
+**Application Name**: Lassa Fever Surveillance Platform
 
 **Description**: A comprehensive, data-driven public health website focused on Lassa Fever surveillance and awareness in Nigeria. The platform combines real-time infectious disease monitoring dashboard capabilities with educational content and predictive analytics, covering the period from 2020 to 2026. The website serves as an official-style disease intelligence system for public health awareness, academic presentation, and outbreak monitoring, featuring live data feeds and interactive visualizations.
 
@@ -31,7 +31,7 @@
 ### 3.1 Page Structure
 
 ```
-LF Surveillance Platform
+Lassa Fever Surveillance Platform
 ├── Home Page (Single-page application with sections)
 │   ├── Hero Section
 │   ├── Overview Section
@@ -52,7 +52,7 @@ LF Surveillance Platform
 ### 3.2 Functional Description by Section
 
 #### 3.2.1 Hero Section
-- Display H1 title: \"LF Surveillance Platform\"
+- Display H1 title: \"Lassa Fever Surveillance Platform\"
 - Display H2 subtitle: \"Tracking outbreaks, improving awareness, and supporting public health interventions across Nigeria.\"
 - Show dark red/burgundy gradient background with layered medical SVG decorations
 - Display animated ECG/heartbeat line SVG running across section
@@ -256,15 +256,15 @@ LF Surveillance Platform
 
 #### 3.3.5 SEO and Technical Optimization
 - Implement proper heading hierarchy (H1→H2→H3) across all sections
-- Set homepage title under 60 characters: \"LF Surveillance Platform | Nigeria Lassa Fever Monitoring\"
+- Set homepage title under 60 characters: \"Lassa Fever Surveillance Platform | Nigeria Lassa Fever Monitoring\"
 - Add Open Graph meta tags:
-  - og:title: \"LF Surveillance Platform\"
+  - og:title: \"Lassa Fever Surveillance Platform\"
   - og:description: \"Real-time Lassa Fever surveillance and awareness platform for Nigeria. Track outbreaks, access prevention guidelines, and report symptoms.\"
   - og:image: platform preview image
   - og:url: https://domain.com/
 - Add Twitter Card meta tags:
   - twitter:card: summary_large_image
-  - twitter:title: \"LF Surveillance Platform\"
+  - twitter:title: \"Lassa Fever Surveillance Platform\"
   - twitter:description: \"Real-time Lassa Fever surveillance and awareness platform for Nigeria. Track outbreaks, access prevention guidelines, and report symptoms.\"
   - twitter:image: platform preview image
 - Add JSON-LD structured data:
