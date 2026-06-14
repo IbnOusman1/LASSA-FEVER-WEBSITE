@@ -1,0 +1,42 @@
+# LF Surveillance Platform
+
+> Real-time Lassa Fever surveillance and awareness platform for Nigeria (2020–2026).
+> Developed by Adam Ibn.
+
+## What this site is
+
+LF Surveillance Platform is a public health intelligence website tracking Lassa fever outbreaks
+across Nigeria. It provides epidemiological data, interactive visualizations, outbreak predictions,
+prevention guidelines, and a live symptom reporting system.
+
+## Key sections
+
+- **Hero** — Live surveillance status badge, platform overview, quick statistics
+- **Overview** (`#overview`) — Disease background: causes, symptoms, transmission, prevention, treatment
+- **Live Dashboard** (`#dashboard`) — Real-time confirmed cases, deaths, recoveries, CFR; Supabase Realtime live ticker
+- **Nigeria Map** (`#map`) — Interactive SVG heatmap of 37 states; click-to-drill state panels; 4-tier risk coloring
+- **Epidemiological Analysis** (`#analysis`) — Recharts: yearly trends, seasonal patterns, regional comparisons, CFR analysis
+- **AI Forecast** (`#prediction`) — Machine learning predictive models (Random Forest, SMOTE, ALO); 6-month outbreak risk predictions
+- **Global Monitoring** (`#global`) — West Africa country comparison; active WHO/NCDC public health alerts
+- **Response** (`#response`) — Government interventions, rapid response teams, surveillance systems
+- **Prevention** (`#prevention`) — Food safety, rodent control, hand hygiene, healthcare guidelines
+- **Emergency Reporting** (`#emergency`) — Supabase-backed symptom report form; NCDC hotlines; treatment centres
+
+## Data coverage
+
+- Nigeria Lassa fever epidemiology: 2020–2026
+- 37 Nigerian states with cumulative case/death/recovery data
+- West African Lassa fever context (Nigeria, Sierra Leone, Guinea, Liberia, Benin, Ghana)
+- NCDC emergency hotline: 0800-9700-0010
+
+## Technical
+
+- Built with React 18, Tailwind CSS, shadcn/ui, Recharts, Supabase
+- Supabase Realtime subscriptions on `symptom_reports` table
+- JSON-LD structured data: WebSite + MedicalWebPage schemas
+
+## Contact
+
+NCDC Headquarters, Abuja, Nigeria
+Email: info@ncdc.gov.ng
+Hotline: 0800-9700-0010 (Free, 24/7)

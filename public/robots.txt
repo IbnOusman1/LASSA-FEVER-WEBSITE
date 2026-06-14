@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lf-surveillance.miaoda.app/sitemap.xml

@@ -1,0 +1,551 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.375rem;
+
+    /* =========================================================
+       WARM BEIGE × CRIMSON — Medical Intelligence Platform
+       =========================================================
+       Beige dominates canvas/cards.
+       Crimson/Burgundy for accents, alerts, CTAs.
+       Dark warm-brown text for max readability on beige.
+       ========================================================= */
+
+    /* --- Canvas --- */
+    --background:         35 28% 92%;   /* warm parchment beige  */
+    --foreground:         20 25% 10%;   /* near-black warm brown */
+
+    /* --- Cards & popovers --- */
+    --card:               38 30% 97%;   /* creamy off-white      */
+    --card-foreground:    20 25% 10%;
+
+    --popover:            38 30% 97%;
+    --popover-foreground: 20 25% 10%;
+
+    /* --- Primary: deep crimson/burgundy --- */
+    --primary:            0 65% 36%;    /* #991414 – deep crimson  */
+    --primary-foreground: 38 40% 97%;   /* warm white on crimson   */
+
+    /* --- Secondary: warm taupe surface --- */
+    --secondary:          35 22% 86%;
+    --secondary-foreground: 20 20% 18%;
+
+    /* --- Muted: lighter parchment --- */
+    --muted:              36 20% 89%;
+    --muted-foreground:   20 12% 42%;   /* ≥ 4.5:1 on beige       */
+
+    /* --- Accent: pale rose blush (hover fills) --- */
+    --accent:             0 35% 94%;
+    --accent-foreground:  0 65% 32%;
+
+    /* --- Destructive --- */
+    --destructive:        0 65% 36%;
+    --destructive-foreground: 38 40% 97%;
+
+    /* --- Structural --- */
+    --border: 30 18% 80%;
+    --input:  30 18% 84%;
+    --ring:   0 65% 36%;
+
+    /* --- Charts --- */
+    --chart-1: 0 65% 38%;
+    --chart-2: 25 75% 48%;
+    --chart-3: 38 80% 52%;
+    --chart-4: 142 48% 40%;
+    --chart-5: 207 60% 46%;
+
+    /* --- Sidebar (matches card) --- */
+    --sidebar-background:          38 30% 97%;
+    --sidebar-foreground:          20 25% 10%;
+    --sidebar-primary:             0 65% 36%;
+    --sidebar-primary-foreground:  38 40% 97%;
+    --sidebar-accent:              0 35% 94%;
+    --sidebar-accent-foreground:   0 65% 32%;
+    --sidebar-border:              30 18% 80%;
+    --sidebar-ring:                0 65% 36%;
+
+    /* --- Status colours --- */
+    --success: 142 48% 38%;
+    --warning: 38 80% 46%;
+    --info:    207 60% 46%;
+    --error:   0 65% 36%;
+
+    /* --- Custom medical tokens --- */
+    --crimson:        0 65% 36%;
+    --crimson-light:  0 55% 92%;
+    --crimson-mid:    0 60% 52%;
+    --crimson-deep:   0 65% 24%;
+    --beige-1:        35 28% 92%;   /* page canvas            */
+    --beige-2:        36 25% 88%;   /* section alt            */
+    --beige-3:        38 22% 83%;   /* deeper tint            */
+    --beige-card:     38 30% 97%;   /* card surface           */
+    --beige-warm:     35 35% 94%;   /* soft warm highlight    */
+    --brown-dark:     20 25% 10%;   /* primary text           */
+    --brown-mid:      20 18% 28%;   /* secondary text         */
+    --brown-soft:     20 12% 42%;   /* muted text             */
+
+    /* --- Shadows --- */
+    --shadow-card:  0 2px 12px hsl(0 30% 50% / 0.10), 0 1px 3px hsl(0 30% 50% / 0.08);
+    --shadow-hover: 0 6px 24px hsl(0 50% 40% / 0.14), 0 2px 6px hsl(0 30% 50% / 0.10);
+  }
+
+  /* Dark mode kept consistent with light (platform is light-first) */
+  .dark {
+    --background:         35 28% 92%;
+    --foreground:         20 25% 10%;
+    --card:               38 30% 97%;
+    --card-foreground:    20 25% 10%;
+    --popover:            38 30% 97%;
+    --popover-foreground: 20 25% 10%;
+    --primary:            0 65% 36%;
+    --primary-foreground: 38 40% 97%;
+    --secondary:          35 22% 86%;
+    --secondary-foreground: 20 20% 18%;
+    --muted:              36 20% 89%;
+    --muted-foreground:   20 12% 42%;
+    --accent:             0 35% 94%;
+    --accent-foreground:  0 65% 32%;
+    --destructive:        0 65% 36%;
+    --destructive-foreground: 38 40% 97%;
+    --border: 30 18% 80%;
+    --input:  30 18% 84%;
+    --ring:   0 65% 36%;
+    --chart-1: 0 65% 38%;
+    --chart-2: 25 75% 48%;
+    --chart-3: 38 80% 52%;
+    --chart-4: 142 48% 40%;
+    --chart-5: 207 60% 46%;
+    --sidebar-background:          38 30% 97%;
+    --sidebar-foreground:          20 25% 10%;
+    --sidebar-primary:             0 65% 36%;
+    --sidebar-primary-foreground:  38 40% 97%;
+    --sidebar-accent:              0 35% 94%;
+    --sidebar-accent-foreground:   0 65% 32%;
+    --sidebar-border:              30 18% 80%;
+    --sidebar-ring:                0 65% 36%;
+    --success: 142 48% 38%;
+    --warning: 38 80% 46%;
+    --info:    207 60% 46%;
+    --error:   0 65% 36%;
+    --crimson:        0 65% 36%;
+    --crimson-light:  0 55% 92%;
+    --crimson-mid:    0 60% 52%;
+    --crimson-deep:   0 65% 24%;
+    --beige-1:        35 28% 92%;
+    --beige-2:        36 25% 88%;
+    --beige-3:        38 22% 83%;
+    --beige-card:     38 30% 97%;
+    --beige-warm:     35 35% 94%;
+    --brown-dark:     20 25% 10%;
+    --brown-mid:      20 18% 28%;
+    --brown-soft:     20 12% 42%;
+    --shadow-card:  0 2px 12px hsl(0 30% 50% / 0.10), 0 1px 3px hsl(0 30% 50% / 0.08);
+    --shadow-hover: 0 6px 24px hsl(0 50% 40% / 0.14), 0 2px 6px hsl(0 30% 50% / 0.10);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  *::-webkit-scrollbar { width: 6px; background: transparent; }
+  *::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: hsl(35, 28%, 92%);
+  }
+  html { scroll-behavior: smooth; }
+}
+
+/* =================================================================
+   TYPOGRAPHY — Cinzel for headings (Algerian-style engraved serif)
+   ================================================================= */
+.font-display {
+  font-family: 'Cinzel', 'Times New Roman', serif;
+  letter-spacing: 0.03em;
+}
+h1.display, h2.display { font-family: 'Cinzel', 'Times New Roman', serif; letter-spacing: 0.02em; }
+
+/* =================================================================
+   SECTION BACKGROUNDS — beige palette variants
+   ================================================================= */
+.section-beige-1 { background: hsl(35, 28%, 92%); }
+.section-beige-2 { background: hsl(36, 25%, 88%); }
+.section-beige-3 { background: linear-gradient(160deg, hsl(38,30%,95%) 0%, hsl(35,28%,90%) 100%); }
+.section-beige-hero {
+  background: linear-gradient(
+    155deg,
+    hsl(35, 32%, 95%) 0%,
+    hsl(0, 25%, 94%) 40%,
+    hsl(35, 28%, 91%) 100%
+  );
+}
+.section-beige-alt {
+  background: linear-gradient(160deg, hsl(38,30%,96%) 0%, hsl(35,26%,90%) 100%);
+}
+
+/* =================================================================
+   PREMIUM CARD SURFACES — modern, glass-inflected
+   ================================================================= */
+
+/* Base premium card — soft glass with depth */
+.glass-card-premium {
+  background: hsl(38, 30%, 98%);
+  border: 1px solid hsl(30, 20%, 88%);
+  box-shadow:
+    0 1px 3px hsl(0 30% 30% / 0.06),
+    0 4px 16px hsl(0 40% 40% / 0.08),
+    0 0 0 1px hsl(38 30% 96% / 0.6) inset;
+  backdrop-filter: blur(2px);
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+.glass-card-premium:hover {
+  box-shadow:
+    0 2px 6px hsl(0 30% 30% / 0.08),
+    0 8px 30px hsl(0 50% 36% / 0.12),
+    0 0 0 1px hsl(38 30% 96% / 0.8) inset;
+  transform: translateY(-1px);
+}
+
+/* Accent glass card — subtle crimson tint */
+.glass-card-accent {
+  background: linear-gradient(135deg, hsl(0, 35%, 97%) 0%, hsl(38, 30%, 98%) 100%);
+  border: 1px solid hsl(0, 35%, 84%);
+  box-shadow:
+    0 1px 3px hsl(0 40% 30% / 0.07),
+    0 4px 16px hsl(0 50% 36% / 0.09),
+    0 0 0 1px hsl(0 35% 96% / 0.5) inset;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+.glass-card-accent:hover {
+  box-shadow:
+    0 2px 8px hsl(0 40% 30% / 0.10),
+    0 10px 32px hsl(0 55% 36% / 0.14),
+    0 0 0 1px hsl(0 35% 94% / 0.7) inset;
+  transform: translateY(-1px);
+}
+
+/* Stat card — colored left-accent + glass */
+.stat-card-premium {
+  background: hsl(38, 30%, 98%);
+  border: 1px solid hsl(30, 20%, 87%);
+  border-radius: 1rem;
+  box-shadow:
+    0 1px 3px hsl(0 30% 30% / 0.06),
+    0 4px 14px hsl(0 40% 40% / 0.07),
+    0 0 0 1px hsl(38 30% 97% / 0.5) inset;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+  overflow: hidden;
+  position: relative;
+}
+.stat-card-premium::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 1rem 1rem 0 0;
+}
+.stat-card-premium.stat-critical::before { background: linear-gradient(90deg, hsl(0 65% 36%), hsl(0 60% 52%)); }
+.stat-card-premium.stat-warning::before  { background: linear-gradient(90deg, hsl(38 80% 46%), hsl(38 75% 58%)); }
+.stat-card-premium.stat-info::before     { background: linear-gradient(90deg, hsl(207 60% 46%), hsl(207 55% 58%)); }
+.stat-card-premium.stat-success::before  { background: linear-gradient(90deg, hsl(142 48% 38%), hsl(142 45% 50%)); }
+.stat-card-premium:hover {
+  box-shadow:
+    0 2px 8px hsl(0 30% 30% / 0.09),
+    0 8px 28px hsl(0 50% 36% / 0.11);
+  transform: translateY(-2px);
+}
+
+/* Icon gradient orbs */
+.icon-orb-crimson {
+  background: linear-gradient(135deg, hsl(0, 60%, 94%) 0%, hsl(0, 50%, 88%) 100%);
+  border: 1px solid hsl(0, 50%, 80%);
+}
+.icon-orb-amber {
+  background: linear-gradient(135deg, hsl(38, 80%, 94%) 0%, hsl(38, 70%, 86%) 100%);
+  border: 1px solid hsl(38, 65%, 76%);
+}
+.icon-orb-blue {
+  background: linear-gradient(135deg, hsl(207, 65%, 94%) 0%, hsl(207, 55%, 86%) 100%);
+  border: 1px solid hsl(207, 50%, 78%);
+}
+.icon-orb-green {
+  background: linear-gradient(135deg, hsl(142, 55%, 94%) 0%, hsl(142, 45%, 86%) 100%);
+  border: 1px solid hsl(142, 45%, 76%);
+}
+.icon-orb-purple {
+  background: linear-gradient(135deg, hsl(262, 55%, 94%) 0%, hsl(262, 45%, 86%) 100%);
+  border: 1px solid hsl(262, 45%, 78%);
+}
+
+/* Chart card */
+.chart-card {
+  background: hsl(38, 30%, 98%);
+  border: 1px solid hsl(30, 18%, 87%);
+  border-radius: 1rem;
+  box-shadow:
+    0 1px 3px hsl(0 30% 30% / 0.05),
+    0 4px 16px hsl(0 40% 40% / 0.07);
+  transition: box-shadow 0.25s ease;
+}
+.chart-card:hover {
+  box-shadow:
+    0 2px 6px hsl(0 30% 30% / 0.07),
+    0 8px 24px hsl(0 50% 36% / 0.10);
+}
+
+/* Overview section info card */
+.overview-card {
+  background: hsl(38, 30%, 98%);
+  border: 1px solid hsl(30, 18%, 87%);
+  border-radius: 1.25rem;
+  box-shadow:
+    0 1px 3px hsl(0 30% 30% / 0.05),
+    0 4px 14px hsl(0 40% 40% / 0.07),
+    0 0 0 1px hsl(38 30% 98% / 0.6) inset;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.overview-card:hover {
+  box-shadow:
+    0 2px 8px hsl(0 30% 30% / 0.09),
+    0 10px 32px hsl(0 50% 36% / 0.12);
+  transform: translateY(-3px);
+}
+
+/* Facts bar */
+.facts-bar {
+  background: linear-gradient(135deg, hsl(0, 35%, 96%) 0%, hsl(38, 30%, 97%) 60%, hsl(0, 30%, 95%) 100%);
+  border: 1px solid hsl(0, 35%, 84%);
+  border-radius: 1.25rem;
+  box-shadow:
+    0 1px 4px hsl(0 40% 30% / 0.07),
+    0 6px 20px hsl(0 50% 36% / 0.08),
+    0 0 0 1px hsl(0 35% 96% / 0.6) inset;
+}
+
+/* Alert/ticker card */
+.ticker-card {
+  background: hsl(38, 30%, 98%);
+  border: 1px solid hsl(0, 50%, 80%);
+  border-radius: 1rem;
+  box-shadow:
+    0 1px 4px hsl(0 50% 36% / 0.08),
+    0 4px 16px hsl(0 50% 36% / 0.08);
+  overflow: hidden;
+}
+
+/* =================================================================
+   CARD SURFACES — keep .med-card for backwards compat
+   ================================================================= */
+.med-card {
+  background: hsl(38, 30%, 97%);
+  border: 1px solid hsl(30, 18%, 84%);
+  box-shadow: var(--shadow-card);
+}
+.med-card-accent {
+  background: hsl(38, 30%, 98%);
+  border: 1px solid hsl(0, 35%, 82%);
+  box-shadow: var(--shadow-card);
+}
+.med-card:hover { box-shadow: var(--shadow-hover); }
+
+/* Stat card accent borders (kept for legacy; stat-card-premium uses top gradient) */
+.stat-critical { border-left: 3px solid hsl(0 65% 36%); }
+.stat-warning   { border-left: 3px solid hsl(38 80% 46%); }
+.stat-info      { border-left: 3px solid hsl(207 60% 46%); }
+.stat-success   { border-left: 3px solid hsl(142 48% 38%); }
+
+/* =================================================================
+   MEDICAL BACKGROUND PATTERN UTILITIES
+   ================================================================= */
+
+/* Fine dot grid — very subtle */
+.bg-molecular-dots {
+  background-image: radial-gradient(circle, hsl(0 55% 40% / 0.07) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
+
+/* Cell grid (thin lines) */
+.bg-cell-grid {
+  background-image:
+    linear-gradient(hsl(0 40% 50% / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(0 40% 50% / 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* DNA diagonal strands */
+.bg-dna-strand {
+  background-image:
+    repeating-linear-gradient(
+      45deg, hsl(0 50% 45% / 0.05) 0px, hsl(0 50% 45% / 0.05) 1px,
+      transparent 1px, transparent 20px
+    ),
+    repeating-linear-gradient(
+      -45deg, hsl(0 45% 45% / 0.04) 0px, hsl(0 45% 45% / 0.04) 1px,
+      transparent 1px, transparent 20px
+    );
+}
+
+/* Hex / lab pattern */
+.bg-lab-pattern {
+  background-image:
+    radial-gradient(circle at 50% 50%, hsl(0 55% 50% / 0.06) 0%, transparent 60%),
+    radial-gradient(circle, hsl(0 60% 45% / 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 18px 18px;
+}
+
+/* =================================================================
+   ECG / HEARTBEAT ANIMATIONS
+   ================================================================= */
+@keyframes ecg-draw {
+  0%   { stroke-dashoffset: 1200; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes ecg-loop {
+  0%   { stroke-dashoffset: 0; opacity: 1; }
+  85%  { stroke-dashoffset: -1200; opacity: 1; }
+  86%  { stroke-dashoffset: 1200; opacity: 0; }
+  87%  { opacity: 0; }
+  100% { stroke-dashoffset: 0; opacity: 1; }
+}
+.ecg-line {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: ecg-draw 2.2s ease-out forwards, ecg-loop 5.5s ease-in-out 2.2s infinite;
+}
+
+@keyframes ecg-drift {
+  0%   { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -2400; }
+}
+.ecg-drift {
+  stroke-dasharray: 2400;
+  animation: ecg-drift 20s linear infinite;
+}
+
+/* =================================================================
+   PULSE INDICATORS
+   ================================================================= */
+@keyframes pulse-ring {
+  0%   { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.live-pulse::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: hsl(var(--crimson));
+  animation: pulse-ring 1.6s ease-out infinite;
+}
+
+@keyframes pulse-ring-lg {
+  0%   { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(3); opacity: 0; }
+}
+.alert-pulse::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: hsl(var(--crimson));
+  animation: pulse-ring-lg 2s ease-out infinite;
+}
+
+/* =================================================================
+   VIRUS / PARTICLE FLOAT ANIMATIONS
+   ================================================================= */
+@keyframes float-slow {
+  0%   { transform: translateY(0px) rotate(0deg); opacity: 0.12; }
+  50%  { transform: translateY(-18px) rotate(180deg); opacity: 0.2; }
+  100% { transform: translateY(0px) rotate(360deg); opacity: 0.12; }
+}
+@keyframes float-med {
+  0%   { transform: translateY(0px) rotate(0deg); opacity: 0.09; }
+  50%  { transform: translateY(-12px) rotate(90deg); opacity: 0.16; }
+  100% { transform: translateY(0px) rotate(180deg); opacity: 0.09; }
+}
+.virus-float-1 { animation: float-slow 9s ease-in-out infinite; }
+.virus-float-2 { animation: float-med  7s ease-in-out 1.5s infinite; }
+.virus-float-3 { animation: float-slow 11s ease-in-out 3s infinite; }
+.virus-float-4 { animation: float-med  8s ease-in-out 0.8s infinite; }
+
+/* =================================================================
+   LIVE TICKER
+   ================================================================= */
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ticker-track {
+  animation: ticker-scroll 30s linear infinite;
+  white-space: nowrap;
+  display: flex;
+}
+.ticker-track:hover { animation-play-state: paused; }
+
+/* =================================================================
+   GRADIENT TEXT
+   ================================================================= */
+.gradient-text {
+  background: linear-gradient(90deg, hsl(0, 65%, 30%) 0%, hsl(0, 55%, 48%) 60%, hsl(25, 65%, 40%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* =================================================================
+   GLOW RING (subtle crimson for CTA buttons)
+   ================================================================= */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px hsl(0 65% 36% / 0.15), 0 4px 14px hsl(0 65% 36% / 0.18); }
+  50%       { box-shadow: 0 0 0 4px hsl(0 65% 36% / 0.22), 0 6px 20px hsl(0 65% 36% / 0.28); }
+}
+.glow-ring { animation: glow-pulse 3s ease-in-out infinite; }
+
+/* =================================================================
+   DATA FLASH ON REALTIME UPDATE
+   ================================================================= */
+@keyframes data-flash {
+  0%   { opacity: 0.4; }
+  50%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+.data-update { animation: data-flash 0.35s ease-out; }
+
+/* =================================================================
+   MAP HEAT COLOURS
+   ================================================================= */
+.map-critical { fill: hsl(0 72% 35%); }
+.map-high     { fill: hsl(0 65% 52%); }
+.map-medium   { fill: hsl(0 60% 65%); }
+.map-low      { fill: hsl(0 50% 78%); }
+.map-none     { fill: hsl(35 20% 82%); }
+
+/* =================================================================
+   SECTION DIVIDER (watercolour-style crimson top border)
+   ================================================================= */
+.section-divider {
+  border-top: 2px solid transparent;
+  background: linear-gradient(hsl(var(--background)), hsl(var(--background))) padding-box,
+              linear-gradient(90deg, transparent, hsl(0 65% 36% / 0.35), transparent) border-box;
+}
+
+/* =================================================================
+   CINZEL DISPLAY LABEL BADGE
+   ================================================================= */
+.label-badge {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
